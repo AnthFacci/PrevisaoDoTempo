@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Main Css - Position */ 
+
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    justify-content: space-evenly;
+    border: 1px solid #1C2833;
+    box-shadow: 0px 8px 35px rgb(0,0,0, .5);
+    background-color: #1F2434;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    
+
+}
+
+
+
+.mainContent, h2{
+    text-align: center;
+}
+
+.hr{
+    width: 250px;
+    position: relative;
+    left: 75px;
+}
+
+.infoTempo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.cidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+}
+
+.condicaoSecundaria{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.condition{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.temp{
+    text-align: center;
+
+}
+
+#condicao{
+    text-transform: capitalize;
+}
+
+.condicaoSecundaria hr{
+    height: 40px;
+    position: relative;
+    bottom: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+/* Css - Style Decoration */ 
+
+#digitedCity{
+    width: 302px;
+    height: 40px;
+    background-color: #1C1C1E;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#lupa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 40px;
+    background-color: #1C1C1E;
+}
+
+input::placeholder{
+    position: absolute;
+    left: 8px;
+}
+
+#band{
+    height: 35px;
+}
+
+#btnSearch{
+    transition: .3s;
+}
+
+#btnSearch:hover{
+    transform: scale(1.1)
+
+}
+
+

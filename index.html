@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js" defer></script>
+    <title>Previsão do Tempo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,100;1,300&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="mainContent">
+            <h2>Busque a previsão da sua cidade </h2>
+            <div class="searchBox">
+                <input type="text" id="digitedCity" placeholder="Digite o nome da cidade" required>
+                <button id="btnSearch"><i class="fa-solid fa-magnifying-glass" id="lupa"></i></button>
+                
+            </div>
+            
+            <div id="secondDisplay" class="infoTempo hide">
+                <hr class="hr">
+                <div class="cidade">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="city"></span>
+                    <img id="band" src="">
+                </div>
+                <div class="temp">
+                    <p><span id="C"></span>ºC</p>
+                </div>
+                <div class="condition">
+                    <span id="condicao"></span>
+                    <img src="" id="iconCondition" width="50px" height="50px" alt="">
+                </div>
+                <div class="condicaoSecundaria">
+                    <i class="fa-solid fa-droplet"></i><p><span id="umidade"></span></p>
+                    <hr>
+                    <i class="fa-solid fa-wind"></i><p><span id="vento"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
